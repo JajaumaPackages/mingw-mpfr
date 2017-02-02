@@ -5,7 +5,7 @@
 Summary:        MinGW C library for multiple-precision floating-point computations
 Name:           mingw-%{name1}
 Version:        3.1.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 URL:            http://www.mpfr.org/
 Source0:        http://www.mpfr.org/mpfr-%{version}/%{name1}-%{version}.tar.xz
 # GFDL  (mpfr.texi, mpfr.info and fdl.texi)
@@ -83,6 +83,9 @@ rm -rf $RPM_BUILD_ROOT%{mingw64_libdir}/*.la
 %{mingw64_includedir}/*.h
 
 %changelog
+* Thu Feb 02 2017 Jajauma's Packages <jajauma@yandex.ru> - 3.1.5-2
+- Rebuild with GCC 5.4.0
+
 * Tue Nov 01 2016 Thomas Sailer <t.sailer@alumni.ethz.ch> - 3.1.5-1
 - update to 3.1.5
 
